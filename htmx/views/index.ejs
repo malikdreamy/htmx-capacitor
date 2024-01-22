@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmx Practice</title>
+    <!-- Include htmx library -->
+    <script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.js"></script>
+</head>
+<body>
+
+    <h1>htmx Practice Page</h1>
+
+    <!-- Trigger an htmx request on click -->
+    <button hx-get="/message" hx-trigger="click" hx-boost="true" hx-target="#result">Load Data</button>
+
+    <!-- Display the result here -->
+    <div id="result"></div>
+    <form hx-post="/post" hx-trigger="submit" hx-target="#response" hx-swap="innerHTML">
+        <label for="dataInput">Enter Data:</label>
+        <input type="text" id="dataInput" name="some_input_name" required>
+        <button type="submit">Submit POST Request</button>
+    </form>
+
+    <h1 id="response">
+        <p>
+
+        </p>
+    </h1>
+
+</body>
+</html>
