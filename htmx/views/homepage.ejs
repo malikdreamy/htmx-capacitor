@@ -1,0 +1,341 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+<link href="/css/homepage.css" rel="stylesheet" type="text/css">
+<link href="/css/cart.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+    
+</head>
+<body> -->
+
+     <!--Nav Bar-->
+     <div class="wrapper ">
+  <%- include('partials/navbar') %>        
+       <!-- Search Bar-->
+       <div class="container text-center"> 
+        <h1 class="signedinuser">Welcome Back</h1>
+    <%- include('partials/searchbar') %> 
+
+
+
+   <div class="btn-group m-2 option-btns col-sm-5" >
+    <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Women
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/">Women Clothing</a></li>
+      <li><a class="dropdown-item" href="/">Women Shoes</a></li>
+      <li><a class="dropdown-item" href="/">Women Bags</a></li>
+      <li><a class="dropdown-item" href="/">Women Jewelry & Accessories</a></li>
+    </ul>
+  </div>
+
+  <div class="btn-group m-2 option-btns col-sm-5" >
+    <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+   Men
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/">Men Clothing</a></li>
+      <li><a class="dropdown-item" href="/">Men Shoes</a></li>
+      <li><a class="dropdown-item" href="/">Men Bags</a></li>
+      <li><a class="dropdown-item" href="/">Men Jewelry & Accessories</a></li>
+    </ul>
+  </div>
+
+  <div class="btn-group m-2 option-btns col-sm-5" >
+    <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+   Kids
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/">Kids Clothing</a></li>
+      <li><a class="dropdown-item" href="/">Kids Shoes</a></li>
+      <li><a class="dropdown-item" href="/">Kids Bags</a></li>
+      <li><a class="dropdown-item" href="/">Toys & Games</a></li>
+    </ul>
+  </div>
+
+
+  <div class="btn-group m-2 option-btns col-sm-5" >
+    <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Home Goods & Decor
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/">Men Clothing</a></li>
+      <li><a class="dropdown-item" href="/">Men Shoes</a></li>
+      <li><a class="dropdown-item" href="/">Men Bags</a></li>
+      <li><a class="dropdown-item" href="/">Men Jewelry & Accessories</a></li>
+    </ul>
+  </div>
+
+  <div class="btn-group m-2 option-btns col-sm-5" >
+    <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+     Collectibles
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/">Trading Cards</a></li>
+      <li><a class="dropdown-item" href="/">Coins</a></li>
+      <li><a class="dropdown-item" href="/">Men Bags</a></li>
+      <li><a class="dropdown-item" href="/">Men Jewelry & Accessories</a></li>
+    </ul>
+  </div>
+  
+  <div class="btn-group m-2 option-btns col-sm-5" >
+    <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+     Handmade Products
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/">Men Clothing</a></li>
+      <li><a class="dropdown-item" href="/">Men Shoes</a></li>
+      <li><a class="dropdown-item" href="/">Men Bags</a></li>
+      <li><a class="dropdown-item" href="/">Men Jewelry & Accessories</a></li>
+    </ul>
+  </div>
+
+  <div class="btn-group m-2 option-btns col-sm-5" >
+    <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+     Books
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/">Non-Fiction</a></li>
+      <li><a class="dropdown-item" href="/">Fiction</a></li>
+      <li><a class="dropdown-item" href="/">Novels</a></li>
+      <li><a class="dropdown-item" href="/">Educational</a></li>
+      <li><a class="dropdown-item" href="/">Comic Books</a></li>
+      <li><a class="dropdown-item" href="/">E-Books</a></li>
+
+
+    </ul>
+  </div>
+
+
+<button class="btn category bg-info">
+ Wholesale Products
+</button>
+
+      
+   <!--Carousel-->
+
+  <h1 class="text-center m-3" style="color: black;">Just In From Your Fav Brands!</h1>
+
+  <div id="carouselExampleCaptions" class="carousel slide mt-3">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/clothingstore.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" style="display: flex !important; justify-content: center !important;">
+          <h1 style="color: black; background-color: rgb(43, 187, 216); width: 60%; border-radius: 10px;"><b>Balenciaga</b></h1>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/watchstore.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Gucci</h5>
+  
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/fashionkid.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Prada</h5>
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--end carouesl -->
+
+  
+  <h1 class="text-center m-3" style="color: black;">Hot Deals!</h1>
+
+          
+  <div class="row products text-center" id="searchResults">
+
+
+
+    
+    <button class="btn cardbtn " data-toggle="modal" data-target="#exampleModal" >
+     View More
+    </button>
+
+
+     <!--account bar-->
+<div class="bottom-bar">
+  <!-- Account button -->
+  <a href="/my-profile">
+  <button type="button" class="btn btn-light">
+  <i class="fa-solid fa-user"></i>Profile
+  </button>
+</a>
+  <!-- Cart button -->
+
+
+  <button type="button" class="btn btn-light show-current-cart" data-bs-toggle="modal" data-bs-target="#cartModal">
+<i class="fa-solid fa-cart-shopping"></i>
+<p style="display: inline" class="cart-quantity"></p>
+  </button>
+
+  <!-- Message button -->
+  <a href="/chat">
+  <button type="button" class="btn btn-light">
+ <i class="fa-solid fa-message"></i>Messages
+  </button>
+</a>
+  <!-- Search button -->
+
+  <a href="/notifications">
+  <button type="button" class="btn btn-light" >
+    <i class="fa-solid fa-bell"></i>
+
+     <div style="display: inline; border-radius: 50%; font-size: 0.6em; background-color: rgb(255, 7, 7); padding: 5px; color: white;">
+
+       </div>
+ 
+
+
+  </button>
+  </a>
+</div>
+
+
+
+
+
+<!-- showing product options and quantity modal-->
+<div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Add To Cart</h1>
+        <img class="card-img-top" alt="product"/>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h4 class="product-name">Name</h4>
+        <b style="display: block;" class="price">Price</b>
+        <b>Available Quantity:</b>&nbsp;<b class="quantity">Quantity </b>
+      <div class="card product-option-quantity" >
+ <ul class="list-group product-options list-group-flush">
+
+ </ul>
+
+ </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary size-chart-dismiss" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary add-to-cart">Add To Cart</button> 
+      </div>
+    </div>
+  </div>
+</div> 
+
+    <!--successfully added to cart modal-->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+      
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           <h2 class="text-success">Successfully Added To Cart!</h2>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- cart modal-->
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+<div class="modal-dialog">
+  <div class="modal-content">
+    
+
+      <div class="modal-header">
+          <div class="modal-body">
+
+   <button class="btn text-danger" id="close-cart" data-bs-dismiss="modal"> Close X</button>
+<div class="cart-container">
+<div class="row gx-5 products text-center">
+  <div class="col-12">
+    <div class="cart-products">
+  
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+
+<button class="btn cardBtn btn-success check-out-cart">Check Out</button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="push"></div>
+</div>
+</div>
+
+<!--offer modal-->
+<div class="modal fade" id="offerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Send Offer</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <h2 style="margin: 10px;" class="product-title" ></h2>
+      <img style="width: 50%; height: 50%; margin: 10px;" />
+      <div class="modal-body">
+        <img/>
+  
+        <b class="price"></b>
+        <p class="seller" style="display: none"></p>
+        <div class="input-group mt-3">
+          <span class="input-group-text">$</span>
+          <input type="number" class="form-control offer-amount" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-text">.00</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary send-offer-product">Send Offer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <%-include('partials/footer') %> -->
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="/home-page.js"></script>
+
+</body>
+</html> -->

@@ -1,11 +1,13 @@
 const router = require('express').Router();
+const Product = require('../../models/product-model');
 
 
 router.get('/', async(req,res)=>{
 try {
-    console.log('hi');
+    console.log(req.headers['user-agent'])
+const products = await Product.find({});
 
-    res.render('index.ejs')
+res.render('homepage-not-logged-in.ejs', {products: products});
     
 } catch (error) {
     console.log(error);
@@ -23,11 +25,27 @@ router.get('/message', async(req , res)=>{
     }
 })
 
-router.post('/post', async(req,res)=>{
+
+router.get('/login', async(req, res)=>{
     try {
 
-        console.log(req.body)
-        res.send(req.body.some_input_name);
+res.render('login.ejs');
+        
+} catch (error) {
+ console.log(error)
+}
+})
+
+
+router.post('/login', async(req,res)=>{
+    try {
+console.log('hi')
+        const password = req.body.password;
+        const email = req.body.email;
+        if(!password || !email){
+                    return;
+        }
+res.render('homepage.ejs');
         
     } catch (error) {
         console.log(error)

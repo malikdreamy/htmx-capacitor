@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path')
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/Fashion-Store-Watches';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/Closet-Catch';
 const app = express();
 const routes = require('./controllers/index');
 

@@ -1,0 +1,201 @@
+
+.wrapper {
+    min-height: 100%;
+    background-color: #f5f5f5;;
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -75px;
+  
+  }
+  
+  .bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  
+  .category{
+    border-radius: 1px !important;
+    margin-top: 10px;
+  }
+  
+  .view-btn {
+    color: white !important; 
+    background-color: rgb(60, 60, 138) !important; 
+    border-radius: 2px !important;
+  }
+  
+  .selectSize{
+    color:white !important; 
+    background-color: rgb(80, 174, 85) !important; 
+    border-radius: 2px !important;
+  }
+  
+  .navbar {
+  background-color: rgb(60, 60, 138) !important;
+  }
+  
+  .page-heading{
+    color: white;
+  }
+  
+  
+  .product{
+     width: 15rem !important;
+    /* margin-right: 10px !important; */
+    padding: 20px !important;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between; /* optional: distribute space between items */
+  
+  }
+  
+  .card-title{
+    font-size: 20px;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    /* height: 200px !important;  */
+  }
+  
+  .cardbtn{
+    margin-top: 10px !important;
+    width: 115px;
+  
+  }
+  
+  
+  
+  footer{
+    position: relative;
+    background-color: rgb(60, 60, 138) !important;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+  }
+  .push{ /* used to keep footer all the way at the bottom of screen*/
+    width: 100%;
+    height: 75px;
+  }
+  
+  .product-description {
+    font-size: 16px;
+    line-height: 1.5; /* Adjust line spacing as needed */
+    margin-bottom: 10px;
+    text-align: justify; /* Justify the text for a neat appearance */
+    /* Add more styles as needed */
+  }
+  
+  
+  @media screen and (max-width: 455px) { 
+    .product{
+      width: 185px !important;
+        margin-right: 5px !important;
+        margin-left: 10px !important;   
+    }
+  }
+  
+  
+  
+  
+  
+  /* pixel 5 , iPhone SE, iphone X and iphone 12 pro*/
+  @media screen and (max-width: 393px) { 
+    .product{
+        width: 170px !important;
+        margin-right: 5px !important; 
+         padding: 10px !important;
+    }
+  
+    .card-title{
+      font-size: 17px;
+    }
+  
+  
+    
+  }
+  
+  
+  
+  
+  
+  /* samsung galaxy 9*/
+  @media screen and (max-width: 320px) { 
+     .product{
+       width: 145px !important;
+         margin-right: 5px !important;
+         margin-left: 10px !important;   
+     }
+     .selectSize{
+        width: 100% !important;
+     }
+     .card-title{
+      font-size: 15px;
+    }
+  
+   }
+  
+  
+  
+  
+   /* samsung galaxy 8*/
+   @media screen and (max-width: 360px) { 
+     .product{
+        width: 145px !important;
+      }
+     .selectSize{
+        width: 100% !important;
+     }
+     .card-title{
+      font-size: 15px;
+    }
+   }
+  
+  
+  
+  
+   /* galaxy fold */
+   @media screen and (max-width: 280px) { 
+     .product{
+        width: 265px !important;
+      }
+     .cardbtn{
+        width: 100% !important;
+     }
+  
+     .view-product{
+        width: 100% !important;
+     }
+   }
+  
+  
+  
+  
+  /* iPhone XR*/
+   @media screen and (max-width: 414px) { 
+     .view-product{
+        height: 55px !important;
+     }
+     .selectSize{
+        height: 55px !important;
+     }
+     .card-title{
+      font-size: 15px;
+    }
+  
+   }
+  
+  
+  
+  
